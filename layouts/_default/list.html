@@ -48,12 +48,24 @@
 {{- $class = "post-entry tag-entry" }}
 {{- end }}
 
+{{- if and (eq $.Kind "section") (eq $.Section "papers") }}
+{{- $year := $page.Date.Year }}
+{{- if ne $year ($.Scratch.Get "listYear") }}
+<h2 class="year-heading">{{ $year }}</h2>
+{{- $.Scratch.Set "listYear" $year }}
+{{- end }}
+{{- end }}
+
 <article class="{{ $class }}">
   {{- $isHidden := (.Param "cover.hiddenInList") | default (.Param "cover.hidden") | default false }}
   {{- partial "cover.html" (dict "cxt" . "IsSingle" false "isHidden" $isHidden) }}
   <header class="entry-header">
     <h2 class="entry-hint-parent">
-      {{- .Title }}
+      {{- if and (eq $.Kind "section") (eq $.Section "papers") }}
+      {{- $offset := mul (sub $paginator.PageNumber 1) $paginator.PagerSize }}
+      <span class="entry-number">{{ sub (len $pages) (add $offset $index) }}.</span>
+      {{- end }}
+      {{ .Title }}
       {{- if .Draft }}
       <span class="entry-hint" title="Draft">
         <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" fill="currentColor">

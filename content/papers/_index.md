@@ -1,4 +1,5 @@
 ---
-title: "Papers"
-description: "Preprints and articles by Juan Jose Esteve-Paredes."
+title: "Publications"
+description: "Articles and preprints by Juan Jose Esteve-Paredes."
+url: /publications/
 ---

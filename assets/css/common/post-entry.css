@@ -105,3 +105,25 @@
     color: var(--secondary);
     box-shadow: 0 1px 0 var(--primary);
 }
+
+.year-heading {
+    margin: calc(var(--gap) * 1.5) 0 var(--gap) 0;
+    padding-bottom: 6px;
+    font-size: 24px;
+    border-bottom: 2px solid var(--border);
+}
+
+.year-heading:first-of-type {
+    margin-top: 0;
+}
+
+.entry-number {
+    flex-shrink: 0;
+    margin-right: 8px;
+    white-space: nowrap;
+    color: var(--secondary);
+}
+
+.entry-hint-parent:has(.entry-number) {
+    justify-content: flex-start;
+}

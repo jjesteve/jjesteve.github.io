@@ -45,3 +45,24 @@
 .button:hover {
     background: var(--lightcolor);
 }
+.profile .profile_inner > span {
+    font-size: 1.3em;
+    line-height: 1.5;
+}
+
+.profile .profile_inner > span p {
+    margin-bottom: 0.8em;
+}
+
+.profile .profile_inner > span ul {
+    margin: 0 0 0.8em 0;
+    padding-left: 1.2em;
+}
+
+.profile .profile_inner > span li {
+    margin-bottom: 0.5em;
+}
+
+.profile .profile_inner > span a {
+    box-shadow: 0 2px 0 var(--darkcolor);
+}
