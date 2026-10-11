@@ -53,7 +53,6 @@ params:
 
             - **Piezo- and flexo-photovoltaics:** I am working in the description of the bulk photovoltaic effect (BPVE) in layered materials under uniform and local strain.
             - **Photovoltaic effect in metasurfaces:** my current work consists in the description of exciton-photon interaction in photonic metasurfaces and its effect in the BPVE.
-            - **Soft X-ray spectroscopy in TMDCs:** I am investigating the role of excitons in the extreme ultraviolet energy range.
             - **Computational methods:** I am developer of the OPTIX code for the study of optical responses in solids (download from the [XATU repository](https://github.com/xatu-code/opticx)).
           buttons:
             - name: Publications
